@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings - SC</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../pico.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="theme-color" content="#2F2F2F" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="shortcut icon" href="/favicon.png" />
+
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <p><i class="preview"></i></p>
+      <h1 class="poppins-font" id="title">Settings</h1>
+      <div class="grid">
+        <label class="poppins-font" for="textcolor"
+          >BG Color:
+          <input
+            type="color"
+            name="textcolor"
+            value="#2F2F2F"
+            id="back_color"
+          />
+        </label>
+        <label class="poppins-font"
+          >Time Color:
+          <input
+            type="color"
+            name="textcolor"
+            value="#ECECEC"
+            id="time_color"
+          />
+        </label>
+        <label class="poppins-font"
+          >Date Color:
+          <input
+            type="color"
+            name="textcolor"
+            value="#BBBBBB"
+            id="date_color"
+          />
+        </label>
+        <label class="poppins-font"
+          >Tiny Text Color:
+          <input
+            type="color"
+            name="textcolor"
+            value="#868686"
+            id="staffle_color"
+          />
+        </label>
+      </div>
+      <br />
+      <label class="poppins-font">
+        <input type="checkbox" name="" id="12hour" /> Use 12 Hour Time
+      </label>
+      <br />
+      <label class="poppins-font"
+        >Clock Text: <input type="text" id="clock_text" />
+      </label>
+      <br />
+      <br />
+      <br />
+      <div></div>
+      <div class="grid">
+        <button onclick="save()" class="poppins-font">Save</button>
+        <button onclick="load()" class="poppins-font">Load</button>
+        <button onclick="clearstuff()" class="poppins-font">
+          Reset Values
+        </button>
+        <button onclick="back()" class="poppins-font">Back</button>
+        <button onclick="make_share()">Share</button>
+      </div>
+      <!-- <a href="/index.html">Back to Main Page</a> -->
+      <br />
+      <br />
+      <div id="acceptdiv"></div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+    "short_name": "Clock App",
+    "name": "Clock: It ticks and tocks",
+    "icons": [
+     
+      {
+        "src": "/clockappicon2.png",
+        "type": "image/png",
+        "sizes": "1024x1024"
+      }
+    ],
+    "start_url": "/",
+    "background_color": "#2F2F2F",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#2F2F2F",
+    
+    "description": "A simple clock app"
+
+  }

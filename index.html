@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <meta
+      name="description"
+      content="A simple clock page, with no ads. That you can use to check the time. "
+    />
+    <meta name="theme-color" content="#2F2F2F" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <!--<script src="./service-worker.js"></script>-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body class="bg">
+    <div class="staffle noselect">
+      Staffle Clock <a href="/settings/" class="staffle">Settings</a>
+    </div>
+
+    <div class="centered noselect">
+      <div class="clock">
+        <div class="time">Loading Time...</div>
+        <div class="date">Loading Date...</div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+      // ServiceWorker Registration
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker
+            .register("serviceworker.js")
+            .then((registration) => {
+              // Registration was successful
+              console.log(
+                "ServiceWorker registration successful with scope: ",
+                registration.scope
+              );
+            })
+            .catch((err) => {
+              // registration failed :(
+              console.log("ServiceWorker registration failed: ", err);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>

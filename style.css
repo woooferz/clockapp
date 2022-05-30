@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.centered {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+  
+.bg {
+    background-color: #2F2F2F;
+}
+
+.link {
+    color: #868686;
+}
+
+
+.staffle {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: #868686;
+    float: right;
+    margin: 10px;
+}
+
+.centered .clock .time {
+    color: #ececec;
+    font-size: 85px;
+}
+
+.centered .clock .date {
+    color: #bbbbbb;
+    font-size: 35px;
+}
+
+.centered .clock .date, .centered .clock .time {
+    
+    font-family: 'Poppins', sans-serif;
+    
+    text-align: center;
+}
+
+body.dark {
+    background-color: #2F2F2F;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
