@@ -13,6 +13,8 @@ const urlsToCache = [
   "settings/index.html",
   "settings/",
   "manifest.json",
+  "./",
+  ".",
 ];
 
 // Install the service worker and open the cache and add files mentioned in array to cache

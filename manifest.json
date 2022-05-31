@@ -4,15 +4,15 @@
     "icons": [
      
       {
-        "src": "/clockappicon2.png",
+        "src": "./clockappicon2.png",
         "type": "image/png",
         "sizes": "1024x1024"
       }
     ],
-    "start_url": "/",
+    "start_url": "./",
     "background_color": "#2F2F2F",
     "display": "standalone",
-    "scope": "/",
+    "scope": "./",
     "theme_color": "#2F2F2F",
     
     "description": "A simple clock app"

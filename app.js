@@ -86,7 +86,7 @@ var intervalId = window.setInterval(function () {
   //console.log(NoDateTime)
   $(".staffle").html(
     text_thing +
-      ' | <a class="link" href="/settings/" style="color: ' +
+      ' | <a class="link" href="./settings/" style="color: ' +
       localStorage.getItem("staffle_color") +
       '">Settings</a>'
   );
