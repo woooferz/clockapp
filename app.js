@@ -8,6 +8,13 @@
     registerServiceWorker();
 }*/
 
+function santizeText(text) {
+  var element = document.createElement("div");
+  element.innerText = text;
+  var sanitizedHTML = element.innerHTML;
+  return sanitizedHTML;
+}
+
 var use_12_hour = false;
 
 const convert24hourTo12HourFormat = (time) => {
@@ -84,8 +91,9 @@ var intervalId = window.setInterval(function () {
       ? "Staffle Clock"
       : localStorage.getItem("clock_text");
   //console.log(NoDateTime)
+  better_text = santizeText(text_thing);
   $(".staffle").html(
-    text_thing +
+    better_text +
       ' | <a class="link" href="./settings/" style="color: ' +
       localStorage.getItem("staffle_color") +
       '">Settings</a>'
