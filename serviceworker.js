@@ -1,4 +1,4 @@
-const CACHE_NAME = "version-5";
+const CACHE_NAME = "version-7";
 const urlsToCache = [
   "index.html",
   "app.js",
@@ -13,6 +13,7 @@ const urlsToCache = [
   "settings/index.html",
   "settings/",
   "manifest.json",
+  "jquery.min.js",
 ];
 
 // Install the service worker and open the cache and add files mentioned in array to cache
