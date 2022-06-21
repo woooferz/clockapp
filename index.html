@@ -30,7 +30,25 @@
         <div class="date">1/1/1999</div>
       </div>
     </div>
+    <script>
+      var date = new Date();
 
+      var seconds = date.getSeconds();
+      var minutes = date.getMinutes();
+      var hour = date.getHours();
+
+      seconds = zeroize(seconds);
+      minutes = zeroize(minutes);
+      hour = zeroize(hour);
+
+      var NoDateTime = hour + ":" + minutes + ":" + seconds;
+
+      var NoTimeDate =
+        date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
+
+      document.querySelector(".time").innerHTML = NoDateTime;
+      document.querySelector(".date").innerHTML = noTimeDate;
+    </script>
     <script src="app.js" defer></script>
     <script>
       // ServiceWorker Registration
