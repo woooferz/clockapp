@@ -1,4 +1,4 @@
-const CACHE_NAME = "version-7";
+const CACHE_NAME = "version-8";
 const urlsToCache = [
   "index.html",
   "app.js",
