@@ -78,7 +78,7 @@ var intervalId = window.setInterval(function () {
   var NoDateTime = hour + ":" + minutes + ":" + seconds;
 
   var NoTimeDate =
-    date.getFullYear() + "/" + (date.getMonth() + 1) + "/" + date.getDate();
+    date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
 
   if (use_12_hour == true) {
     NoDateTime = convert24hourTo12HourFormat(NoDateTime);
