@@ -105,3 +105,21 @@ var intervalId = window.setInterval(function () {
 function zeroize(number) {
   return number < 10 ? "0" + number : number;
 }
+
+document.addEventListener(
+  "keydown",
+  function (e) {
+    if (e.key === "Enter") {
+      toggleFullScreen();
+    }
+  },
+  false
+);
+
+function toggleFullScreen() {
+  if (!document.fullscreenElement) {
+    document.documentElement.requestFullscreen();
+  } else if (document.exitFullscreen) {
+    document.exitFullscreen();
+  }
+}

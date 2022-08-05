@@ -1,4 +1,4 @@
-const CACHE_NAME = "version-9";
+const CACHE_NAME = "version-10";
 const urlsToCache = [
   "index.html",
   "app.js",
@@ -14,6 +14,9 @@ const urlsToCache = [
   "settings/",
   "manifest.json",
   "zep.min.js",
+  "fonts/poppins1.woff2",
+  "fonts/poppins2.woff2",
+  "fonts/poppins3.woff2",
 ];
 
 // Install the service worker and open the cache and add files mentioned in array to cache
